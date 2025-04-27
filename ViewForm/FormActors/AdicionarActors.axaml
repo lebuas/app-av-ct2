@@ -1,0 +1,79 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="500"
+             x:Class="corte2.ViewForm.FormActors.AdicionarActors">
+
+
+    <StackPanel Margin="20">
+        <!-- Nota / Mensaje de acción -->
+        <TextBlock
+            Margin="0,0,0,15"
+            Foreground="White"
+            FontStyle="Italic"
+            FontSize="14"
+            Text="Formulario Para Ingresar un Actor o Actriz"
+            HorizontalAlignment="Center" />
+
+        <!-- Campos -->
+        <TextBlock Margin="0 5">Código:</TextBlock>
+        <TextBox Name="CodigoTextBox" Watermark="Ingresa un Código" />
+
+        <TextBlock Margin="0 5">Nombre:</TextBlock>
+        <TextBox Name="NombreTextBox" Watermark="Ingresa un Nombre" />
+
+        <TextBlock Margin="0 5">URL IMDB:</TextBlock>
+        <TextBox Name="UrlTextBox" Watermark="Ingrese un IMDB" />
+        
+        <TextBlock Margin="0 5">Pais:</TextBlock>
+        <TextBox Name="PaisTextBox" Watermark="Ingresa un Pais" />
+        
+        
+        <TextBlock Margin="0 5">Edad:</TextBlock>
+        <TextBox Name="EdadTextBox" Watermark="Ingresa una edad" />
+
+        <TextBlock Margin="0 5">Grammy:</TextBlock>
+        <TextBox Name="GramyTextBox" Watermark="Ingrese # Grammys que ha Ganado " />
+        
+
+        <!-- Botones -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20" Margin="20,20,0,0">
+            <Button Content="Guardar"
+                    Width="100"
+                    Height="40"
+                    Background="#4CAF50"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    CornerRadius="10"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Click="OnGuardarClick">
+                <Button.Styles>
+                    <Style Selector="Button:pointerover">
+                        <Setter Property="Background" Value="#45A049" />
+                    </Style>
+                </Button.Styles>
+            </Button>
+
+            <Button Content="Salir"
+                    Width="100"
+                    Height="40"
+                    Background="Blue"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    CornerRadius="10"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Click="OnSalirClick">
+                <Button.Styles>
+                    <Style Selector="Button:pointerover">
+                        <Setter Property="Background" Value="#D32F2F" />
+                    </Style>
+                </Button.Styles>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+
+
+</UserControl>

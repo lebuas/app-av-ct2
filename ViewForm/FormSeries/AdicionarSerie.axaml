@@ -1,0 +1,77 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+             x:Class="corte2.ViewForm.FormSeries.AdicionarSerie">
+    
+    <StackPanel Margin="20">
+        <!-- Nota / Mensaje de acción -->
+        <TextBlock
+            Margin="0,0,0,15"
+            Foreground="White"
+            FontStyle="Italic"
+            FontSize="14"
+            Text="Formulario Para Registrar una Serie"
+            HorizontalAlignment="Center" />
+
+        <!-- Campos -->
+        <TextBlock Margin="0 5">Código:</TextBlock>
+        <TextBox Name="CodigoTextBox" Watermark="Ingresa un Código" />
+
+        <TextBlock Margin="0 5">Titulo:</TextBlock>
+        <TextBox Name="NombreTextBox" Watermark="Ingresa Titulo de la serie" />
+
+        <TextBlock Margin="0 5">URL IMDB:</TextBlock>
+        <TextBox Name="UrlTextBox" Watermark="Ingrese un IMDB" />
+        
+        <TextBlock Margin="0 5">Año de Estreno:</TextBlock>
+        <TextBox Name="AnioEstrenoTextBox" Watermark="Ingrese un Año de Estreno" />
+        
+        
+        <TextBlock Margin="0 5">Genero:</TextBlock>
+        <TextBox Name="GeneroTextBox" Watermark="Ingrese in Genero" />
+
+        <TextBlock Margin="0 5">Temporada:</TextBlock>
+        <TextBox Name="TemporadaTextBox" Watermark="Ingrese # Temporadas " />
+        
+
+        <!-- Botones -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20" Margin="20,20,0,0">
+            <Button Content="Guardar"
+                    Width="100"
+                    Height="40"
+                    Background="#4CAF50"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    CornerRadius="10"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Click="OnGuardarClick">
+                <Button.Styles>
+                    <Style Selector="Button:pointerover">
+                        <Setter Property="Background" Value="#45A049" />
+                    </Style>
+                </Button.Styles>
+            </Button>
+
+            <Button Content="Salir"
+                    Width="100"
+                    Height="40"
+                    Background="Blue"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    CornerRadius="10"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Click="OnSalirClick">
+                <Button.Styles>
+                    <Style Selector="Button:pointerover">
+                        <Setter Property="Background" Value="#D32F2F" />
+                    </Style>
+                </Button.Styles>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+
+</UserControl>
