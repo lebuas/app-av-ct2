@@ -61,7 +61,7 @@ namespace corte2
         // Abre el repositorio de GitHub en el navegador
         private void GithubClick(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("https://github.com/lebuas")
+            Process.Start(new ProcessStartInfo("https://github.com/lebuas/app-av-ct2")
             {
                 UseShellExecute = true
             });
